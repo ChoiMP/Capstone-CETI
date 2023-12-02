@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35f0bdcd9a202f478a9af1f6170d05c, type: 3}
+  m_Name: New Laser
+  m_EditorClassIdentifier: 
+  itemName: "\uB808\uC774\uC800 \uBC1C\uC0AC"
+  itemIndex: "\uD305\uAE30\uB294 \uB808\uC774\uC800 \uBC1C\uC0AC"
+  isActive: 1
+  itemImage: {fileID: 21300000, guid: 43c9262da9a245946af2db454401811d, type: 3}
+  bullet: {fileID: 2638143095750831680, guid: b4e88629cca4eb34b9cca23e0274daa5, type: 3}

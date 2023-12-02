@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a405c946f5aa3de448a80e41a27a70fb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - agent: {instanceID: 0}
+  - ani: {instanceID: 0}
+  - Player: {instanceID: 0}
+  - itemBox: {instanceID: 0}
+  - Attack_Effect: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

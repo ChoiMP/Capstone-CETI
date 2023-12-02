@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c819f293468fc5b458c1868114ad36d7, type: 3}
+  m_Name: New Fire
+  m_EditorClassIdentifier: 
+  itemName: "\uD654\uC5FC\uBC29\uC0AC\uAE30"
+  itemIndex: "\uC8FC\uBCC0 8\uBC29\uD5A5\uC73C\uB85C \uD654\uC5FC\uC744 \uBC1C\uC0AC"
+  isActive: 1
+  itemImage: {fileID: 21300000, guid: 210f8b2fbe9eeac4599604707149040f, type: 3}
+  effect: {fileID: 191028, guid: 44b3eb1ae6c8e8140aa1f83bd18e8607, type: 3}
+  fire: {fileID: 375673719913180829, guid: 4b1e3448430bf8f488f5718b91d64c12, type: 3}

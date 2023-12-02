@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843e173bd11091c4e9f3f3d03f40a8d3, type: 3}
+  m_Name: New DMG Increase
+  m_EditorClassIdentifier: 
+  itemName: "\uD130\uB81B \uAC15\uD654"
+  itemIndex: "\uACF5\uACA9\uB825\uC774 10% \uC99D\uAC00\uD55C\uB2E4."
+  isActive: 0
+  itemImage: {fileID: 21300000, guid: fdddfa8fdbb913a48943b0383516c719, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299c7d1505b197d4190392d2188e3a8a, type: 3}
+  m_Name: New Thunder
+  m_EditorClassIdentifier: 
+  itemName: "\uBC88\uAC1C"
+  itemIndex: "\uC8FC\uBCC0 10m \uC774\uB0B4\uC758 \uC801\uC5D0\uAC8C \uC804\uAE30
+    \uACF5\uACA9"
+  isActive: 1
+  itemImage: {fileID: 21300000, guid: 79818861ef6b93443a29310b4306d0a5, type: 3}
+  effect: {fileID: 5928691648400039421, guid: 58c878a4642fbf7418f4c4d573128601, type: 3}
