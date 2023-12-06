@@ -1,4 +1,4 @@
-# Capstone-CETI
+# Capstone-SETI
 23-2학기 캡스톤디자인 
 상온초전도체 양자컴퓨터 마라로제 탕후루 X 팀 
 SETI - Search for Extra Terrestrial Intelligence
