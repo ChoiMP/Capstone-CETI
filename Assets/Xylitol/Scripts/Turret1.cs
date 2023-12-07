@@ -22,9 +22,9 @@ public class Turret1 : MonoBehaviour
 
     public bool onObstacle; // 장애물 판단
 
-    public int level2_XP = 10;
-    public int level3_XP = 20;
-    public int level4_XP = 30;
+    public int level2_XP = 3;
+    public int level3_XP = 5;
+    public int level4_XP = 10;
 
     bool level1;
     bool level2 = false;

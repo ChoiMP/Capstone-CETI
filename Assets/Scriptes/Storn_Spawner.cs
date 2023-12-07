@@ -10,11 +10,15 @@ public class Storn_Spawner : MonoBehaviour
     public GameObject ob;
     [SerializeField] BoxCollider boxCollider;
     public float time = 0.1f;
+
+    public GameObject Ston_Danger_View;
     // Start is called before the first frame update
+    
     void Start()
     {
         boxCollider = rangeObject.GetComponent<BoxCollider>();
     }
+
     Vector3 Return_RandomPosition()
     {
         Vector3 originPosition = rangeObject.transform.position;
@@ -33,8 +37,18 @@ public class Storn_Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ob.GetComponent<Spawn_Enemy>().spawn_Check == true)
+        if(Room_Controller.room == ob && ob.GetComponent<Spawn_Enemy>().spawn_Check == false)
         {
+            Ston_Danger_View.SetActive(true);
+            StartCoroutine("Destroy_View");
+        }
+        else
+        {
+            Ston_Danger_View.SetActive(false);
+        }
+        if (ob.GetComponent<Spawn_Enemy>().spawn_Check == true)
+        {
+            
             if (time <= 0)
             {
                 print("¼ÒÈ¯");
@@ -47,5 +61,11 @@ public class Storn_Spawner : MonoBehaviour
                 time -= Time.deltaTime;
             }
         }
+    }
+
+    IEnumerator Destroy_View()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        Ston_Danger_View.SetActive(false);
     }
 }

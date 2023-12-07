@@ -7,12 +7,14 @@ using TMPro;
 public class Time_Attack_Script : MonoBehaviour
 {
     public TextMeshProUGUI game_Over;
+
+    public GameObject timew_Attack_View;
     // Time_Attack()
     public TextMeshProUGUI time_UI;
 
-    public Image box_Image;
+    /*public Image box_Image;
     public Text time_Ex;
-    public Text description_Window;
+    public Text description_Window;*/
 
     public bool time_Attack = false;
     public float time = 60;
@@ -32,15 +34,17 @@ public class Time_Attack_Script : MonoBehaviour
         }
         if (transform.gameObject.GetComponent<Spawn_Enemy>().spawn_Miri_Check == true && transform.gameObject.GetComponent<Spawn_Enemy>().spawn_Check != true)
         {
-            box_Image.gameObject.SetActive(true);
+            timew_Attack_View.SetActive(true);
+            /*box_Image.gameObject.SetActive(true);
             time_Ex.gameObject.SetActive(true);
-            description_Window.gameObject.SetActive(true);
+            description_Window.gameObject.SetActive(true);*/
         }
         else
         {
-            box_Image.gameObject.SetActive(false);
+            timew_Attack_View.SetActive(false);
+            /*box_Image.gameObject.SetActive(false);
             time_Ex.gameObject.SetActive(false);
-            description_Window.gameObject.SetActive(false);
+            description_Window.gameObject.SetActive(false);*/
         }
     }
 

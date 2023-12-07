@@ -8,8 +8,8 @@ public class Move_Cube : MonoBehaviour
     public GameObject rangeObject;
     [SerializeField] BoxCollider boxCollider;
 
-    private float moveTimer = 3f;
-    private float directionTimer = 3f;
+    public float moveTimer = 3f;
+    public float directionTimer = 3f;
 
     private Vector3 moveDirection;
 

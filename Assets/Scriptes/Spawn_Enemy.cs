@@ -107,7 +107,9 @@ public class Spawn_Enemy : MonoBehaviour
         }
         for (int i = 0; i <= short_Enemy_Count; i++) /// 랜덤 수 만큼 근거리 적 생성
         {
-            GameObject instantCapsul = Instantiate(short_Enemy[0], Return_RandomPosition(), Quaternion.identity);
+            int count = Random.Range(1, short_Enemy.Length);
+
+            GameObject instantCapsul = Instantiate(short_Enemy[count], Return_RandomPosition(), Quaternion.identity);
             instantCapsul.transform.parent = Room_Controller.room.transform;
             //instantCapsul.transform.parent = rangeObject.transform;
         }

@@ -118,9 +118,10 @@ public class Start_Plant_UI : MonoBehaviour
         }
         for (int i = 0; i <= short_Enemy_Count; i++) /// 랜덤 수 만큼 근거리 적 생성
         {
-            GameObject instantCapsul = Instantiate(short_Enemy[0], Return_RandomPosition(), Quaternion.identity);
-            instantCapsul.transform.parent = room.transform;
-            //instantCapsul.transform.parent = rangeObject.transform;
+            int count = Random.Range(0, short_Enemy.Length);
+
+            GameObject instantCapsul = Instantiate(short_Enemy[count], Return_RandomPosition(), Quaternion.identity);
+            instantCapsul.transform.parent = rangeObject.transform;
         }
 
         if (boss_Check == true) // 보스 몬스터를 생성하는 방이면 생성
@@ -148,7 +149,6 @@ public class Start_Plant_UI : MonoBehaviour
             {
                 room = this.gameObject;
 
-                print(room.name);
                 ceiling_Object.gameObject.SetActive(false);
                 Room_Controller.room = room;
                 Door_Manager.instance.On_Door();

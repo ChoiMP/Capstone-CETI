@@ -6,6 +6,7 @@ public class Move_Cube_Controller : MonoBehaviour
 {
     public GameObject check_Ob;
     public GameObject[] move_cube;
+    public GameObject Move_Cube_View;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,16 @@ public class Move_Cube_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(check_Ob != null)
+        if (Room_Controller.room == check_Ob && check_Ob.GetComponent<Spawn_Enemy>().spawn_Check == false)
+        {
+            Move_Cube_View.SetActive(true);
+        }
+        else
+        {
+            Move_Cube_View.SetActive(false);
+        }
+
+        if (check_Ob != null)
         {
             if (check_Ob.GetComponent<Spawn_Enemy>().clear_Check == true)
             {

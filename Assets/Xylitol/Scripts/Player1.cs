@@ -26,7 +26,7 @@ public class Player1 : MonoBehaviour
 
     private bool resDown;
     public static float resurrectDis = 4f; //부활 가능 거리
-    public float resurrectChargeTime = 2f;
+    public float resurrectChargeTime = 3f;
     public float chargeTime;
     public bool canRes1 = false;
 
@@ -38,29 +38,19 @@ public class Player1 : MonoBehaviour
 
     public bool isDied = false;
 
+    // -----------맵 담당자가 수정한 부분-------------
+    public static Player1 instance;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+    //-----------------------------------------------
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        StartCoroutine(DeadCheck());
-    }
 
-    public IEnumerator DeadCheck()
-    {
-        while (true)
-        {
-            if (!isDied)
-            {
-                if (player1_hp <= 0)
-                {
-                    PlayerDie();
-                }
-
-
-            }
-            yield return new WaitForSeconds(0.5f);
-        }
     }
 
     private void FixedUpdate()

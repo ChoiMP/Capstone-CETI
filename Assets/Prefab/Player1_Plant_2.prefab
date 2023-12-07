@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7446030821603058343}
   - component: {fileID: 360409547507929450}
   - component: {fileID: 6719922655855987570}
-  m_Layer: 16
+  m_Layer: 9
   m_Name: Player1_Plant_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c00529287428b0f429add4852a98ef77, type: 2}
+  - {fileID: 2100000, guid: 4048c9aac47d31c42a4b54ff904787d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

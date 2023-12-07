@@ -81,10 +81,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 255727993404589829, guid: 4105a9658fa855443a301a445bdd86ae, type: 3}
     - target: {fileID: 7026352120895945614, guid: 7ed3e345f07e89940ae0c1e00eeb7d1d, type: 3}
-      propertyPath: Attack_Power
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026352120895945614, guid: 7ed3e345f07e89940ae0c1e00eeb7d1d, type: 3}
       propertyPath: Find_ObjectLayer.m_Bits
       value: 0
       objectReference: {fileID: 0}

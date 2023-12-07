@@ -12,6 +12,8 @@ public class Jeonyong_balpan : MonoBehaviour
     //public GameObject ob;
     [SerializeField] BoxCollider boxCollider;
     public float time = 5f;
+
+    public GameObject View;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,16 @@ public class Jeonyong_balpan : MonoBehaviour
 
     private void Update()
     {
-        if (rangeObject.GetComponent<Spawn_Enemy>().clear_Check == false)
+        if (Room_Controller.room == rangeObject && rangeObject.GetComponent<Spawn_Enemy>().spawn_Check == false)
+        {
+            View.SetActive(true);
+        }
+        else
+        {
+            View.SetActive(false);
+        }
+
+        if (rangeObject.GetComponent<Spawn_Enemy>().clear_Check == false && rangeObject.GetComponent<Spawn_Enemy>().spawn_Check == true)
         {
             if (time <= 0)
             {
