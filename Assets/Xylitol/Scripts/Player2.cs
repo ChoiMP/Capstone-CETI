@@ -20,7 +20,7 @@ public class Player2 : MonoBehaviour
 
     private bool resDown;
     public static float resurrectDis = 4f; //부활 가능 거리
-    public float resurrectChargeTime = 3f;
+    public float resurrectChargeTime = 2f;
     public float chargeTime;
 
     private Vector3 knockBackDir;
@@ -33,9 +33,25 @@ public class Player2 : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        anim= GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+        StartCoroutine(DeadCheck());
     }
+    public IEnumerator DeadCheck()
+    {
+        while (true)
+        {
+            if (!isDied)
+            {
+                if (player2_hp <= 0)
+                {
+                    PlayerDie();
+                }
 
+
+            }
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
     private void FixedUpdate()
     {
         Move();
