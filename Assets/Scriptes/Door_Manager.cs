@@ -26,7 +26,7 @@ public class Door_Manager : MonoBehaviour
 
     public void Off_Door()
     {
-        print("¹® ¿°");
+        //print("¹® ¿°");
         foreach (GameObject d in door)
         {
             d.SetActive(false);
@@ -34,7 +34,7 @@ public class Door_Manager : MonoBehaviour
     }
     public void On_Door()
     {
-        print("¹® ´ÝÀ½");
+        //print("¹® ´ÝÀ½");
         foreach (GameObject d in door)
         {
             d.SetActive(true);

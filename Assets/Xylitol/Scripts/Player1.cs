@@ -126,7 +126,7 @@ public class Player1 : MonoBehaviour
             {        
                 uiManager.ResurrctUIOnp2();
 
-                Debug.Log(uiManager.ResurrectTextP2.text);
+                //Debug.Log(uiManager.ResurrectTextP2.text);
 
                 if (resDown)
                 {
@@ -187,8 +187,8 @@ public class Player1 : MonoBehaviour
         {
             Destroy(collision.gameObject);
             current_XP++;
-            Debug.Log("È¹µæ");
-            Debug.Log(current_XP);
+            //Debug.Log("È¹µæ");
+            //Debug.Log(current_XP);
 
         }
         if (!isDied)
@@ -196,7 +196,7 @@ public class Player1 : MonoBehaviour
             if (collision.gameObject.tag == "Enemy")
             {
                 player1_hp--;
-                Debug.Log(player1_hp);
+                //Debug.Log(player1_hp);
 
 
                 if (player1_hp <= 0)

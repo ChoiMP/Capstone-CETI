@@ -50,7 +50,7 @@ public class LongAttack_Obh : MonoBehaviour
 
     void destroy()
     {
-        print("파티클 삭제하기");
+        //print("파티클 삭제하기");
         Destroy(gameObject);
     }
 

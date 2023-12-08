@@ -29,7 +29,7 @@ public class Beam : Item
                 Quaternion rotation = Quaternion.LookRotation(dir);
                 GameObject bullet = Instantiate(this.bullet, player1.transform.position, rotation);
                 bullet.GetComponent<BeamBullet>().Init(2);
-                Debug.Log("Bullet 持失");
+                //Debug.Log("Bullet 持失");
             }
         }
         yield return null;
@@ -54,7 +54,7 @@ public class Beam : Item
                 Quaternion rotation = Quaternion.LookRotation(dir);
                 GameObject bullet = Instantiate(this.bullet, player2.transform.position, rotation);
                 bullet.GetComponent<BeamBullet>().Init(2);
-                Debug.Log("Bullet 持失");
+                //Debug.Log("Bullet 持失");
             }
         }
         yield return null;

@@ -66,7 +66,7 @@ public class Monster : MonoBehaviour
             Player.GetComponent<Player2>().player2_hp -= (int)Attack_Power;
         }
         //플레이어가 데미지를 받는 부분
-        print(Player.name + "을 공격 하였습니다");
+        //print(Player.name + "을 공격 하였습니다");
     }
 
     public void Hit_the_Monster(float Player_AttackPower, GameObject Effect)//피격 받는 함수
@@ -81,7 +81,7 @@ public class Monster : MonoBehaviour
                 GameObject E = Instantiate(Effect);
                 Attack_Effect = E;
                 E.transform.parent = gameObject.transform;
-                E.transform.localPosition = new Vector3(0, 0, 0);
+                E.transform.localPosition = new Vector3(0, 0.5f, 0);
                 // 이펙트 삭제 함수 추가
                 E.AddComponent<EffectDestroy>();
             }

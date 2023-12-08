@@ -104,15 +104,15 @@ public class Player2 : MonoBehaviour
             Destroy(collision.gameObject);
             Player1 player = GameObject.Find("Player1 robot").GetComponent<Player1>();
             player.current_XP++;
-            Debug.Log("È¹µæ");
-            Debug.Log(player.current_XP);
+            //Debug.Log("È¹µæ");
+            //Debug.Log(player.current_XP);
         }
         if (!isDied)
         {
             if (collision.gameObject.tag == "Enemy")
             {
                 player2_hp--;
-                Debug.Log(player2_hp);
+                //Debug.Log(player2_hp);
 
                 if (player2_hp <= 0)
                 {

@@ -69,12 +69,16 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6028608282921009898, guid: 7ed3e345f07e89940ae0c1e00eeb7d1d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028608282921009898, guid: 7ed3e345f07e89940ae0c1e00eeb7d1d, type: 3}
       propertyPath: m_Center.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7026352120895945614, guid: 7ed3e345f07e89940ae0c1e00eeb7d1d, type: 3}
       propertyPath: Hp
-      value: 3
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7026352120895945614, guid: 7ed3e345f07e89940ae0c1e00eeb7d1d, type: 3}
       propertyPath: itemBox

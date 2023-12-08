@@ -16,7 +16,7 @@ public class Item : ScriptableObject
     /// <param name="player1"></param>
     public virtual IEnumerator Function(Player1 player1)
     {
-        Debug.Log(player1.name + "use" + name);
+        //Debug.Log(player1.name + "use" + name);
         yield break;
     }
     /// <summary>
@@ -25,7 +25,7 @@ public class Item : ScriptableObject
     /// <param name="player2"></param>
     public virtual IEnumerator Function(Player2 player2)
     {
-        Debug.Log(player2.name + "use" + name);
+        //Debug.Log(player2.name + "use" + name);
         yield break;
     }
     public IEnumerator timer(float time)

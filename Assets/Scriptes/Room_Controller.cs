@@ -16,7 +16,7 @@ public class Room_Controller : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        print("DDDDDDDDDDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        //print("DDDDDDDDDDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         if(other.gameObject.name == "Player1 robot")
         {
             player1_In = true;
@@ -37,14 +37,14 @@ public class Room_Controller : MonoBehaviour
         {// 플레이어가 모두 입장하고 스테이지를 클리어 하지 않았다면
             if (transform.GetComponent<Spawn_Enemy>().spawn_Check != true) // 스테이지에 적을 생성하지 않았다면
             {
-                if (ston_Rain.gameObject != null)
-                {
-                    ston_Rain.gameObject.SetActive(true);
-                }
+                //if (ston_Rain.gameObject != null)
+                //{
+                //    ston_Rain.gameObject.SetActive(true);
+                //}
                 room = transform.gameObject;
                 Door_Manager.instance.test = room;
 
-                print(room.name);
+                //print(room.name);
                 ceiling_Object.gameObject.SetActive(false);
                 Door_Manager.instance.On_Door();
                 transform.GetComponent<Spawn_Enemy>().Create_Enemy(); // 적 생성
@@ -53,10 +53,10 @@ public class Room_Controller : MonoBehaviour
         else
         {
             ceiling_Object.gameObject.SetActive(false);
-            if (ston_Rain != null)
-            {
-                ston_Rain.gameObject.SetActive(false);
-            }
+            //if (ston_Rain != null)
+            //{
+            //    ston_Rain.gameObject.SetActive(false);
+            //}
 
         }
 

@@ -32,9 +32,9 @@ public class Red_Summoner : Monster
         int num = Random.Range(0, Enemy.Length);
 
         float X = (Random.Range(-0.5f, 0.5f))+transform.position.x;
-        float Y = (Random.Range(-0.5f, 0.5f))+transform.position.y;
+        float Z = (Random.Range(-0.5f, 0.5f))+transform.position.z;
 
-        Instantiate(Enemy[num], new Vector2(X, Y), Quaternion.identity);
+        Instantiate(Enemy[num], new Vector3(X,0, Z), Quaternion.identity);
        
     }
 }

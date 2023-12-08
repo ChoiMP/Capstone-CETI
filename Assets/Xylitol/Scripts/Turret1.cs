@@ -32,7 +32,7 @@ public class Turret1 : MonoBehaviour
     bool level4 = false;
 
     // Ãß°¡ 
-    public float dmg=10f;
+    public float dmg=3f;
 
     void Start()
     {
@@ -84,12 +84,12 @@ public class Turret1 : MonoBehaviour
                 if (hitEnemy[i].transform.tag != "Player")
                 {
                     hitEnemy[i].transform.GetComponent<Monster>().Hit_the_Monster(dmg, attackEffect);
-                    print(hitEnemy[i].transform.name);
+                    //print(hitEnemy[i].transform.name);
                 }
             }
-            Debug.Log(hitEnemy[i].transform.name);
+            //Debug.Log(hitEnemy[i].transform.name);
         }
-        Debug.DrawRay(transform.position, targetDir, Color.green);
+        //Debug.DrawRay(transform.position, targetDir, Color.green);
     }
 
     void PlayerAliveCheck()

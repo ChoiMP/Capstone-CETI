@@ -19,7 +19,7 @@ public class Thunder : Item
             if (collider.CompareTag("Enemy"))
             {
                 // 적에게 데미지 주기
-                collider.GetComponent<Monster>().Hit_the_Monster(10f, effect);
+                collider.GetComponent<Monster>().Hit_the_Monster(30f, effect);
                 Instantiate(effect, collider.transform.position, Quaternion.identity);
             }
         }
@@ -38,7 +38,7 @@ public class Thunder : Item
             if (collider.CompareTag("Enemy"))
             {
                 // 적에게 데미지 주기
-                collider.GetComponent<Monster>().Hit_the_Monster(10f, effect);
+                collider.GetComponent<Monster>().Hit_the_Monster(30f, effect);
                 Instantiate(effect, collider.transform.position, Quaternion.identity);
             }
         }

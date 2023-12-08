@@ -37,7 +37,7 @@ public class Event_Controller : MonoBehaviour
                 game_Over.gameObject.SetActive(true);
                 time_UI.text = "0";
                 Time.timeScale = 0;   
-                print("게임 오버");
+                //print("게임 오버");
             }
         }
         else
